@@ -4,7 +4,7 @@
 > Theme: Matrix green terminal | Stack: Flask + Scapy + Chart.js  
 > Layout: Multi-tab dashboard (Overview / Traffic / Packets / Anomalies / 5G Slices)
 
-## ⚡ Quick Start
+## Quick Start
 
 ### Windows
 ```
@@ -27,9 +27,10 @@ python3 app.py
 | **Simulated** | Just Python + Flask | Realistic traffic, works without admin, default |
 | **Real Capture** | Admin + Scapy + Npcap | Captures actual NIC packets |
 
+
 **Windows real capture**: Install [Npcap](https://npcap.com) first, then run as Administrator.
 
-## 📊 Dashboard Tabs
+## Dashboard Tabs
 
 | Tab | What you see |
 |-----|-------------|
@@ -39,14 +40,15 @@ python3 app.py
 | **ANOMALIES** | Threat log, detection rules, severity breakdown |
 | **5G SLICES** | eMBB/URLLC/mMTC classification, MEC vs Cloud latency |
 
-## 🔬 5G Concepts Simulated
+
+##  5G Concepts Simulated
 
 - **Network Slicing**: Traffic auto-classified into eMBB / URLLC / mMTC per 3GPP specs
 - **MEC (Multi-access Edge Computing)**: Edge vs cloud latency comparison
 - **QoS Metrics**: Throughput, packet rate, latency approximation
 - **Anomaly Detection**: DoS patterns, rate spikes, suspicious ports (C2 indicators)
 
-## 📁 Project Structure
+##  Project Structure
 ```
 5g_analyzer/
 ├── app.py              ← Flask backend + Scapy capture + API routes
